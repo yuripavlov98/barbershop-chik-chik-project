@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    background-color: #241D1C;
+    color: #F6F3E3;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visuality-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.container {
+    max-width: 1312px;
+    padding-left: 48px;
+    padding-right: 48px;
+    margin: 0 auto;
+}

@@ -1,0 +1,105 @@
+.price {
+    padding: 62px 0;
+    &__title {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin: 0 0 16px;
+    }
+
+    &__tagline {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        margin: 0 0 40px;
+
+    }
+
+    &__wrapper-content {
+        display: flex;
+        gap: 32px;
+        &:before {
+            content: '';
+            flex-basis: 50%;
+            background-position: top;
+            background-size: cover;
+            background-image: url('../img/price/price-wall.jpg');
+        }
+    }
+    &__content {
+        flex-basis: 50%;
+    }
+    &__list {
+        padding: 0;
+        margin: 0 0 62px;
+        list-style: none;
+        
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        text-transform: uppercase;
+        padding-bottom: 7px;
+        border-bottom: 1px solid #BFBDB2;
+        margin-bottom: 24px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__item-title {
+        text-transform: uppercase;
+    }
+    &__item-count {
+        text-transform: lowercase;
+        white-space: nowrap;
+    }
+}
+
+// @media (max-width: 768px) {
+//     .price {
+//         padding: 40px 0;
+// 		&__title {
+//             font-size: 32px;
+//             margin-bottom: 16px;
+// 		}
+// 		&__wrapper-content {
+//             &::before {
+//                 content: none;
+//             }
+// 		}
+
+// 		&__content {
+//             flex-basis: 100%;
+// 		}
+
+// 		&__list {
+//             margin-bottom: 40px;
+// 		}
+//     }
+// }
+// @media (max-width: 560px) {
+//     .price {
+//         padding: 32px 0;
+// 		&__title {
+//             font-size: 20px;
+//             margin-bottom: 8px;
+// 		}
+// 		&__tagline {
+//             font-size: 12px;
+//             margin-bottom: 24px;
+// 		}
+// 		&__list {
+//             margin-bottom: 24px;
+// 		}
+// 		&__item {
+//             line-height: 1.2;
+//             font-size: 12px;
+//             padding-bottom: 6px;
+//             margin-bottom: 16px;
+// 		}
+//     }
+// }
